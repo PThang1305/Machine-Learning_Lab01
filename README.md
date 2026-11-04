@@ -64,7 +64,7 @@ Trên tập Test (268 dòng):
 | Lasso (L1, α = 100) | 6,121.25 | 210.01 | 4,209.91 | 0.7231 | 0.0301 |
 | ElasticNet (α = 100, l1_ratio = 0.9998) | 6,128.94 | 210.78 | 4,238.23 | 0.7226 | 0.0285 |
 
-## Đọc kết quả thế nào cho đúng
+## Phổ Quang
 
 - **Không có mô hình nào chính xác hơn rõ rệt.** Trên Test, OLS có sai số thấp nhất; trên CV, chênh giữa 4 mô hình khoảng 7.7 USD, nhỏ hơn rất nhiều so với SD giữa các fold (khoảng 210 USD).
 - **Giá trị của Lasso/ElasticNet là mô hình gọn hơn:** cùng đưa `sex_male` và `region_northwest` về đúng 0, R² Test giảm khoảng 0,005 (Lasso) và 0,009 (ElasticNet).
