@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "model_key": "Lasso",
+  "model_name": "Lasso (L1, alpha=100)",
+  "estimator_class": "Lasso",
+  "target": "charges",
+  "parameters": {
+    "alpha": 100.0,
+    "fit_intercept": true,
+    "max_iter": 20000,
+    "positive": false,
+    "selection": "cyclic",
+    "tol": 0.0001
+  },
+  "feature_names": [
+    "age",
+    "bmi",
+    "children",
+    "sex_male",
+    "smoker_yes",
+    "region_northwest",
+    "region_southeast",
+    "region_southwest"
+  ],
+  "coefficients": {
+    "age": 3395.6938551797334,
+    "bmi": 1776.9663297003149,
+    "children": 547.3614965836812,
+    "sex_male": 0.0,
+    "smoker_yes": 9121.863792073005,
+    "region_northwest": 0.0,
+    "region_southeast": -80.0109549862318,
+    "region_southwest": -31.809729970653294
+  },
+  "intercept": 13030.203369289047,
+  "zero_weight_tolerance": 0.0001,
+  "preprocessor_file": "preprocessor.json",
+  "prediction_formula": "y_hat = intercept + sum((x_scaled_j * coefficient_j))"
+}

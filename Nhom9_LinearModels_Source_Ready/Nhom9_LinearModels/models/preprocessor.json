@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "description": "JSON representation of the fitted OneHotEncoder + StandardScaler pipeline.",
+  "numeric_features": [
+    "age",
+    "bmi",
+    "children"
+  ],
+  "categorical_features": [
+    "sex",
+    "smoker",
+    "region"
+  ],
+  "categories": {
+    "sex": [
+      "female",
+      "male"
+    ],
+    "smoker": [
+      "no",
+      "yes"
+    ],
+    "region": [
+      "northeast",
+      "northwest",
+      "southeast",
+      "southwest"
+    ]
+  },
+  "one_hot_drop": "first",
+  "unknown_category_behavior": "all_zero_for_that_categorical_group",
+  "feature_names": [
+    "age",
+    "bmi",
+    "children",
+    "sex_male",
+    "smoker_yes",
+    "region_northwest",
+    "region_southeast",
+    "region_southwest"
+  ],
+  "scaler": {
+    "with_mean": true,
+    "with_std": true,
+    "mean": [
+      39.19831618334892,
+      30.540425631431223,
+      1.0841908325537886,
+      0.5144995322731525,
+      0.20018709073900842,
+      0.2469597754911132,
+      0.2684752104770814,
+      0.24789522918615528
+    ],
+    "scale": [
+      13.992044945868127,
+      6.049010149589668,
+      1.194163709262001,
+      0.49978971934590277,
+      0.4001402497130951,
+      0.4312431388213533,
+      0.4431661898615121,
+      0.43179067212354316
+    ]
+  }
+}

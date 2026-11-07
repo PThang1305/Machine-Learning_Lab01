@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "model_key": "ElasticNet",
+  "model_name": "ElasticNet (alpha=100, l1_ratio=0.9998)",
+  "estimator_class": "ElasticNet",
+  "target": "charges",
+  "parameters": {
+    "alpha": 100.0,
+    "fit_intercept": true,
+    "l1_ratio": 0.9998,
+    "max_iter": 20000,
+    "positive": false,
+    "selection": "cyclic",
+    "tol": 0.0001
+  },
+  "feature_names": [
+    "age",
+    "bmi",
+    "children",
+    "sex_male",
+    "smoker_yes",
+    "region_northwest",
+    "region_southeast",
+    "region_southwest"
+  ],
+  "coefficients": {
+    "age": 3327.1053637813807,
+    "bmi": 1740.3522730821019,
+    "children": 544.3312571916275,
+    "sex_male": 0.0,
+    "smoker_yes": 8937.990621642688,
+    "region_northwest": 0.0,
+    "region_southeast": -55.551376363180424,
+    "region_southwest": -29.065479208150848
+  },
+  "intercept": 13030.203369289049,
+  "zero_weight_tolerance": 0.0001,
+  "preprocessor_file": "preprocessor.json",
+  "prediction_formula": "y_hat = intercept + sum((x_scaled_j * coefficient_j))"
+}

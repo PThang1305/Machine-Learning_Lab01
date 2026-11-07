@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "model_key": "Ridge",
+  "model_name": "Ridge (L2, alpha=10)",
+  "estimator_class": "Ridge",
+  "target": "charges",
+  "parameters": {
+    "alpha": 10.0,
+    "fit_intercept": true,
+    "max_iter": null,
+    "positive": false,
+    "tol": 0.0001
+  },
+  "feature_names": [
+    "age",
+    "bmi",
+    "children",
+    "sex_male",
+    "smoker_yes",
+    "region_northwest",
+    "region_southeast",
+    "region_southwest"
+  ],
+  "coefficients": {
+    "age": 3440.444817572327,
+    "bmi": 1907.3515059237918,
+    "children": 634.4425000455445,
+    "sex_male": -42.92096245834241,
+    "smoker_yes": 9145.512857669442,
+    "region_northwest": -165.80333037486477,
+    "region_southeast": -353.34521528847625,
+    "region_southwest": -277.48610630645237
+  },
+  "intercept": 13030.203369289045,
+  "zero_weight_tolerance": 0.0001,
+  "preprocessor_file": "preprocessor.json",
+  "prediction_formula": "y_hat = intercept + sum((x_scaled_j * coefficient_j))"
+}
